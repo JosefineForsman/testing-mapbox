@@ -1,0 +1,16 @@
+.login{
+  font-family: manjari;
+}
+input{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: poppins;
+}
+button{
+    background-color: white;
+    border: 1px solid black;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
