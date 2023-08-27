@@ -1,0 +1,15 @@
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: aliceblue;
+    flex-direction: column;
+    background-color: rgb(89, 157, 225);
+}
+.landing__title{
+    font-family: poppins;
+    color: white;
+    letter-spacing: 0.08em;
+    font-weight: 200;
+}

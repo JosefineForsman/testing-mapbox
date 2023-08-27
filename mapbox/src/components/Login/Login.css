@@ -1,5 +1,15 @@
 .login{
   font-family: manjari;
+  flex-direction: column;
+  display: flex;
+  gap:1rem;
+  background-color: white;
+  width: 400px;
+  margin-bottom:2rem;
+  padding:1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 input{
     background-color: white;
@@ -7,10 +17,24 @@ input{
     padding: 4px 10px;
     border-radius: 4px;
     font-family: poppins;
+    width: 200px;
 }
 button{
     background-color: white;
-    border: 1px solid black;
     padding: 7px 10px;
-    border-radius: 4px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(69, 115, 241);
+    color:white;
+    border:none;
+    font-family: poppins;
+    margin-bottom: 1rem;
+}
+.login-messages{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

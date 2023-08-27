@@ -3,19 +3,13 @@
     background-color: rgb(89, 157, 225);
     height: 200px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 .header__title{
     color:white;
     margin-left:4rem;
     display: flex;
     align-items: center;
-}
-.header__login{
-    /* margin-right:1rem; */
-    background-color: rgb(160, 203, 225);
-    height: 150px;
-    border-radius: 10px;
-    padding: 0rem 2rem;
-    margin:0;
+    font-family: poppins;
 }
