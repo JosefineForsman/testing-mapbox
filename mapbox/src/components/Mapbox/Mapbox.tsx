@@ -1,5 +1,5 @@
 // MapboxComponent.tsx
-import React, { useEffect, useRef } from 'react';
+import  { useEffect, useRef } from 'react';
 import mapboxgl, { Map as MapGl } from 'mapbox-gl';
 
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN as string;
@@ -8,12 +8,12 @@ interface MapboxProps {
   lat: number;
   lng: number;
   zoom: number;
-  setLat: (lat:number) => void
-  setLng: (lng:number)=> void
-  setZoom: (zoom: number) => void
+  setLat: (lat: number) => void;
+  setLng: (lng: number) => void;
+  setZoom: (zoom: number) => void;
 }
 
-const MapboxComponent: React.FC<MapboxProps> = ({ lat, lng, zoom, setLat, setLng, setZoom }) => {
+function MapboxComponent({ lat, lng, zoom, setLat, setLng, setZoom }: MapboxProps) {
   const mapContainer = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapGl | null>(null);
   const markerRef = useRef<mapboxgl.Marker | null>(null);
@@ -46,10 +46,10 @@ const MapboxComponent: React.FC<MapboxProps> = ({ lat, lng, zoom, setLat, setLng
 
   return (
     <div>
-      <div ref={mapContainer} style={{ height: '500px' }}className='map-container'></div>
+      <div ref={mapContainer} style={{ height: '500px' }} className='map-container'></div>
       <p>Center position: {lat} lat, {lng} long:</p>
     </div>
   );
-};
+}
 
 export default MapboxComponent;
